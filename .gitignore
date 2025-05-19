@@ -1,0 +1,12 @@
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Build directories
+dist/
+build/
+
+# Node modules
+node_modules/

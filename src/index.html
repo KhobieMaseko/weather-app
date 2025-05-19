@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather Forecast</h1>
+      <form id="weather-form">
+        <input type="text" id="location-input" placeholder="Enter city" required>
+        <button type="submit">Search</button>
+        <div class="toggle-container">
+          <span>°C</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="unit-toggle">
+            <span class="slider"></span>
+          </label>
+          <span>°F</span>
+        </div>
+      </form>
+    </header>
+
+    <main>
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+      </div>
+
+      <div id="weather-display" class="weather-display hidden">
+        <div class="current-weather">
+          <div class="location-info">
+            <h2 id="location-name">--</h2>
+            <p id="current-date">--</p>
+          </div>
+          <div class="weather-main">
+            <div class="weather-icon">
+              <img id="weather-icon" src="" alt="Weather icon">
+            </div>
+            <div class="temperature">
+              <span id="current-temp">--</span>
+            </div>
+            <div class="weather-details">
+              <p id="weather-description">--</p>
+              <p>Humidity: <span id="humidity">--</span>%</p>
+              <p>Wind: <span id="wind-speed">--</span> <span id="wind-unit">km/h</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="forecast">
+          <h3>5-Day Forecast</h3>
+          <div id="forecast-container" class="forecast-container"></div>
+        </div>
+
+        <div id="gif-container" class="gif-container"></div>
+      </div>
+
+      <div id="error-display" class="error hidden">
+        <p>Unable to fetch weather data. Please try again.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
