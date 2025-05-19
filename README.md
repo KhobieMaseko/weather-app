@@ -25,3 +25,13 @@ Created for The Odin Project curriculum.
 2. Run `npm install`
 3. Run `npm start` for development server
 4. Run `npm run build` for production build
+
+
+## Screenshots
+
+![Weather App 1](https://github.com/user-attachments/assets/e6c9dc43-956f-4451-b425-9cf56c8d1d7b)
+
+
+![Weather App 2](https://github.com/user-attachments/assets/5515a0e9-00b3-4673-bef0-00bcb2c28d97)
+
+
